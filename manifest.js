@@ -1,0 +1,49 @@
+{
+	"name":"Tint OS",
+	"short-name":"Tint OS",
+	"display":"standalone",
+	"theme_color":"white",
+	"icons":[
+		{
+			"src":"https://tints-tech.com/TintOS/image/icon192.png",
+			"type":"image/png",
+			"sizes":"192x192"
+		},
+		{
+			"src":"https://tints-tech.com/TintOS/image/icon512.png",
+			"type":"image/png",
+			"sizes":"512x512"
+		}
+	],
+	"start_url":"https://tints-tech.com/TintOS/main.html",
+	"serviceworker":"https://tints-tech.com/TintOS/serviceWorker.js",
+	"categories":["business","education","entertainment","games","music","personalization","photo","productivity","social"],
+	"share_target": {
+		"action":"https://tints-tech.com/TintOS/main.html",
+		"method":"POST",
+		"enctype":"multipart/form-data",
+		"params":{
+			"title":"title",
+			"text":"text",
+			"url":"url",
+			"files":[
+				{
+					"name":"img",
+					"accept":["image/*"]
+				},
+				{
+					"name":"video",
+					"accept":["video/*"]
+				},
+				{
+					"name":"audio",
+					"accept":["audio/*"]
+				},
+				{
+					"name":"misc",
+					"accept":["*/*"]
+				}
+			]
+		}
+	}
+}
